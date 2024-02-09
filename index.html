@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Huỳnh Việt Phong</title>
+  <title>Lì xì</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./index.css">
 </head>
@@ -120,12 +123,26 @@
     window.setInterval('flakeFall();', 100);
     //]]>
 </script>
-	<div id="main" class="d-md-none">
-		<div class="group-card p-2 text-center">
+    <div id="login" class="container d-none">
+        <div class="p-3">
+                <h5>Lì Xì Online By Văn Sỷ</h5>
+                <form id="form-contact">
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Mật Khẩu</label>
+                    <input type="text" class="form-control" id="matkhau" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Liên hệ Sỷ để lấy mật khẩu.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Đăng Nhập</button>
+                </form>
+        </div>
+    </div>
+
+	<div id="main" class="d-none d-md-none">
+		<div class="group-card p-2 text-center d-none" id="group-card">
             <div>
                 <h5>Click vào 1 hình, suy nghĩ kĩ vào :)</h5>
             </div>
-			<div class="card-pick shadow-lg">
+			<div class="card-pick shadow-lg bg-1">
 
             </div>
 			<div class="card-pick bg-2 shadow-lg">
@@ -135,9 +152,15 @@
             </div>			<div class="card-pick bg-4 shadow-lg">
 
             </div>
+
+            <div id="success-text"></div>
 		</div>
-		<button class="btn btn-light">Nhận Lì Xì Nè</button>
+		<button class="btn btn-light btn-li d-none" id="button-card">Click vào đây nhận Lì Xì Nè</button>
 	</div>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
 	<script src="./index.js"></script>
 
 </body>

@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: center;
 }
-.btn {
+.btn.btn-li {
   position: absolute;
   left: 50%;
   bottom: 30px;
@@ -99,4 +99,36 @@ body {
   100% {
     --rotate: 360deg;
   }
+}
+
+.body >div:not(#main) {
+  pointer-events: none;
+}
+
+
+.card-pick p {
+  background-color: white;
+  position: absolute;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.opa {
+  opacity: 0.4;
+}
+
+#success-text {
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#success-text small {
+  font-size: 14px;
 }
