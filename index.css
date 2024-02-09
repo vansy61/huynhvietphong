@@ -119,6 +119,8 @@ body {
 }
 .opa {
   opacity: 0.4;
+  height: 70px;
+
 }
 
 #success-text {
@@ -131,5 +133,4 @@ body {
 
 #success-text small {
   font-size: 14px;
-  height: 70px;
 }
